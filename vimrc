@@ -6,13 +6,11 @@ let mapleader = ","
 
 " plugin management
 call plug#begin('~/.vim/plugged')
-Plug 'marciomazza/vim-brogrammer-theme'
 Plug 'mhinz/vim-signify'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
-Plug 'sjl/gundo.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/matchit.zip'
 Plug 'yggdroot/leaderf', { 'do': './install.sh' }
@@ -44,7 +42,6 @@ nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR
 " syntax, hightlighting and spelling
 set background=dark
 set hlsearch
-colorscheme brogrammer
 syntax on
 
 " using the mouse
