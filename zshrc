@@ -86,6 +86,7 @@ path=(~/Scripts $path)
 
 # completion
 autoload -U compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 compinit
 
 # history search
