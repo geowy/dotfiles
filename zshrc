@@ -75,6 +75,7 @@ alias wiff='wag init --full --force'
 
 # environment variables
 export CLICOLOR=1
+export EDITOR=nvim
 
 # path
 path=(~/Scripts $path)
