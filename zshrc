@@ -73,6 +73,9 @@ alias bi='bundle install'
 alias wff='wag get --full --force && wag init --full --force'
 alias wiff='wag init --full --force'
 
+# misc aliases
+alias q='exit'
+
 # environment variables
 export CLICOLOR=1
 export EDITOR=nvim
@@ -91,6 +94,6 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 
-# etc
+# misc
 eval "$(rbenv init -)"
 source ~/.fzf.zsh
