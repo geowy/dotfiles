@@ -74,6 +74,7 @@ alias wff='wag get --full --force && wag init --full --force'
 alias wiff='wag init --full --force'
 
 # misc aliases
+alias e='$EDITOR'
 alias q='exit'
 
 # environment variables
