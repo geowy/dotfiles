@@ -55,7 +55,6 @@ set confirm
 
 " selecting text
 set clipboard=unnamed,unnamedplus
-packadd! matchit
 
 " editing text
 map Y y$
