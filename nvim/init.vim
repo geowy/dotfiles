@@ -5,7 +5,7 @@ filetype plugin indent on
 let mapleader = ","
 
 " plugin management
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'mhinz/vim-signify'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'

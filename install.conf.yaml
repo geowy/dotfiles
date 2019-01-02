@@ -1,7 +1,6 @@
 - clean: ['~']
 
 - link:
+    ~/.config/nvim: nvim
     ~/.fzf.zsh: fzf.zsh
-    ~/.vim: vim
-    ~/.vimrc: vimrc
     ~/.zshrc: zshrc
