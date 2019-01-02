@@ -40,7 +40,7 @@ set smartcase
 nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 
 " syntax, hightlighting and spelling
-set background=dark
+" colorscheme desert
 set hlsearch
 syntax on
 
