@@ -14,6 +14,9 @@ if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
+# emacs keybindings
+bindkey -e
+
 # history
 HISTSIZE=1000
 SAVEHIST=1000
@@ -49,7 +52,10 @@ alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcof='git checkout --force'
 alias gd='git diff'
+alias gf='git fetch'
 alias gl='git pull'
+alias gm='git merge'
+alias gma='git merge --abort'
 alias gp='git push'
 alias gpu='git push --set-upstream origin HEAD'
 alias gs='git status'
@@ -80,6 +86,7 @@ alias q='exit'
 # environment variables
 export CLICOLOR=1
 export EDITOR=nvim
+export GOPATH="$HOME/Workspace/go"
 
 # path
 path=(~/Scripts $path)
