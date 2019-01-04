@@ -59,21 +59,17 @@ alias gma='git merge --abort'
 alias gp='git push'
 alias gpu='git push --set-upstream origin HEAD'
 alias gs='git status'
+alias gss='git stash'
+alias gssp='git stash pop'
 
 # github aliases
 alias gh='hub'
 alias ghb='hub browse'
 alias ghpr='hub pull-request --browse'
 
-# rails aliases
+# bundle aliases
+alias b='bundle'
 alias be='bundle exec'
-alias beg='bundle exec guard'
-alias ber='bundle exec rails'
-alias berc='bundle exec rails c'
-alias bers='bundle exec rails s'
-alias betc='RAILS_ENV=test bundle exec cucumber'
-alias betr='RAILS_ENV=test bundle exec rspec'
-alias bi='bundle install'
 
 # wag aliases
 alias wff='wag get --full --force && wag init --full --force'
