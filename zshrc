@@ -9,11 +9,6 @@ if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
   chpwd
 }
 
-# Hombrew support
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
-
 # emacs keybindings
 bindkey -e
 
@@ -35,9 +30,7 @@ RPS1='%t'
 # gotta go fast
 setopt AUTO_CD
 setopt EXTENDED_GLOB
-setopt CORRECT
-setopt CORRECT_ALL
-cdpath=(. ~ ~/Workspace)
+cdpath=(. ~ ~/Workspace/src/github.com)
 
 # git aliases
 alias g='git'
@@ -82,10 +75,10 @@ alias q='exit'
 # environment variables
 export CLICOLOR=1
 export EDITOR=nvim
-export GOPATH="$HOME/Workspace/go"
+export GOPATH="$HOME/Workspace"
 
 # path
-path=(~/Scripts $path)
+path=(~/Scripts ~/Workspace/bin $path)
 
 # completion
 autoload -U compinit
@@ -102,5 +95,4 @@ bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 
 # misc
-eval "$(rbenv init -)"
 source ~/.fzf.zsh

@@ -6,6 +6,7 @@ let mapleader = ","
 
 " plugin management
 call plug#begin('~/.config/nvim/plugged')
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'mhinz/vim-signify'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
@@ -82,3 +83,6 @@ set wildmenu
 
 " multi-byte characters
 set encoding=utf-8
+
+" scripts
+noremap <leader>r :w<return>:!./%<return>
