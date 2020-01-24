@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'mhinz/vim-signify'
 Plug 'mileszs/ack.vim'
+Plug 'saalaa/ancient-colors.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
@@ -41,7 +42,7 @@ set smartcase
 nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 
 " syntax, hightlighting and spelling
-colorscheme delek
+colorscheme ancient
 set hlsearch
 syntax on
 
