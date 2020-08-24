@@ -7,15 +7,20 @@ let mapleader = ","
 " plugin management
 call plug#begin('~/.config/nvim/plugged')
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'francoiscabrol/ranger.vim'
+Plug 'hashivim/vim-terraform'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'kshenoy/vim-signature'
 Plug 'mhinz/vim-signify'
 Plug 'mileszs/ack.vim'
-Plug 'saalaa/ancient-colors.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'rbgrouleff/bclose.vim'
+Plug 'saalaa/ancient-colors.vim'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/matchit.zip'
-Plug 'yggdroot/leaderf', { 'do': './install.sh' }
 call plug#end()
 
 " plugin config
@@ -25,6 +30,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
+
+map <Leader>g :GFiles<CR>
 
 " windows
 set splitbelow
@@ -42,6 +51,7 @@ set smartcase
 nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 
 " syntax, hightlighting and spelling
+set background=light
 colorscheme ancient
 set hlsearch
 syntax on

@@ -55,22 +55,8 @@ alias gs='git status'
 alias gss='git stash'
 alias gssp='git stash pop'
 
-# github aliases
-alias gh='hub'
-alias ghb='hub browse'
-alias ghpr='hub pull-request --browse'
-
-# bundle aliases
-alias b='bundle'
-alias be='bundle exec'
-
-# wag aliases
-alias wff='wag get --full --force && wag init --full --force'
-alias wiff='wag init --full --force'
-
 # misc aliases
 alias e='$EDITOR'
-alias q='exit'
 
 # environment variables
 export CLICOLOR=1
@@ -96,3 +82,9 @@ bindkey "^[[B" history-beginning-search-forward-end
 
 # misc
 source ~/.fzf.zsh
+
+# tool config
+export BAT_THEME='ansi-light'
+alias swag=~/Workspace/src/github.com/agworld/swag/swag
+eval "$(opam env)"
+eval "$(rbenv init -)"
