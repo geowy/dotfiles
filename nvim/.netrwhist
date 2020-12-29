@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/georgewyatt/Desktop/website/app'
+let g:netrw_dirhist_0='/Users/georgewyatt/Desktop/website/app/server'
+let g:netrw_dirhist_9='/Users/georgewyatt/Workspace/src/github.com/agworld/website/spec/support/files/deploy_phase'
+let g:netrw_dirhist_8='/Users/georgewyatt/Workspace/src/github.com/agworld/greenbook/GB-gbdata/ztools/db/migrations'
+let g:netrw_dirhist_7='/Users/georgewyatt/Workspace/src/github.com/agworld/infrastructure-cloud/aws/modules/service'
+let g:netrw_dirhist_6='/Users/georgewyatt/Desktop/contest/ecs-demo'
+let g:netrw_dirhist_5='/Users/georgewyatt/Workspace/src/github.com/agworld/infrastructure-cloud/auth0/modules/tenant'
+let g:netrw_dirhist_4='/Users/georgewyatt/mebossy/packer'
+let g:netrw_dirhist_3='.'
+let g:netrw_dirhist_2='/Users/georgewyatt/.aws'

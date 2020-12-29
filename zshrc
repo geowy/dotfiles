@@ -57,6 +57,7 @@ alias gssp='git stash pop'
 
 # misc aliases
 alias e='$EDITOR'
+alias ee='vis-editor'
 
 # environment variables
 export CLICOLOR=1
@@ -88,3 +89,7 @@ export BAT_THEME='ansi-light'
 alias swag=~/Workspace/src/github.com/agworld/swag/swag
 eval "$(opam env)"
 eval "$(rbenv init -)"
+eval "$(direnv hook zsh)"
+eval $(luarocks path --bin)
+
+export RAILS_ENV=development
