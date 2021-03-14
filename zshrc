@@ -30,7 +30,7 @@ RPS1='%t'
 # gotta go fast
 setopt AUTO_CD
 setopt EXTENDED_GLOB
-cdpath=(. ~ ~/Workspace/src/github.com)
+cdpath=(. ~)
 
 # git aliases
 alias g='git'
@@ -57,15 +57,13 @@ alias gssp='git stash pop'
 
 # misc aliases
 alias e='$EDITOR'
-alias ee='vis-editor'
 
 # environment variables
 export CLICOLOR=1
 export EDITOR=nvim
-export GOPATH="$HOME/Workspace"
 
 # path
-path=(~/Scripts ~/Workspace/bin $path)
+path=(~/bin /opt/local/bin /opt/local/sbin $path)
 
 # completion
 autoload -U compinit
@@ -86,10 +84,7 @@ source ~/.fzf.zsh
 
 # tool config
 export BAT_THEME='ansi-light'
-alias swag=~/Workspace/src/github.com/agworld/swag/swag
-eval "$(opam env)"
+alias swag=~/Agworld/swag/swag
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
-eval $(luarocks path --bin)
-
-export RAILS_ENV=development
+path=(/Users/george/Library/Python/3.9/bin $path)
