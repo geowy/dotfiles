@@ -9,6 +9,9 @@ if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
   chpwd
 }
 
+# Set up Nix
+. /Users/george/.nix-profile/etc/profile.d/nix.sh
+
 # emacs keybindings
 bindkey -e
 
@@ -63,7 +66,7 @@ export CLICOLOR=1
 export EDITOR=nvim
 
 # path
-path=(~/bin /opt/local/bin /opt/local/sbin $path)
+path=(~/bin $path)
 
 # completion
 autoload -U compinit
@@ -83,8 +86,6 @@ bindkey "^[[B" history-beginning-search-forward-end
 source ~/.fzf.zsh
 
 # tool config
+eval "$(direnv hook zsh)"
 export BAT_THEME='ansi-light'
 alias swag=~/Agworld/swag/swag
-eval "$(rbenv init -)"
-eval "$(direnv hook zsh)"
-path=(/Users/george/Library/Python/3.9/bin $path)
